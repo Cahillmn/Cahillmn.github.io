@@ -176,18 +176,24 @@ sup {
 }
 
 a {
-    color: #1abc9c;
+    color: #fff;
     text-decoration: none;
     background-color: transparent
 }
 
+.view-site {
+    color:black;
+}
+
 a:hover {
-    color: #117964;
+    color: #1abc9c;
     text-decoration: underline
 }
 
 a:not([href]),
-a:not([href]):hover {
+a:not([
+    
+]):hover {
     color: inherit;
     text-decoration: none
 }
@@ -211,7 +217,8 @@ figure {
 }
 
 img {
-    border-style: none
+     border-style: none 
+   
 }
 
 img,
@@ -515,7 +522,9 @@ mark {
 .img-fluid,
 .img-thumbnail {
     max-width: 100%;
-    height: auto
+    height: auto;
+    border: 3px solid black
+
 }
 
 .img-thumbnail {
@@ -10619,7 +10628,11 @@ a.text-primary:hover {
 }
 
 .text-secondary {
-    color: #2c3e50 !important
+    color: #fff !important
+}
+
+.text-secondary2 {
+    color: black !important
 }
 
 a.text-secondary:focus,
@@ -10853,6 +10866,7 @@ a.text-dark:hover {
     height: .25rem;
     background-color: #2c3e50;
     border-radius: 1rem;
+    /* border-color: #2c3e50 !important */
     border-color: #2c3e50 !important
 }
 
@@ -10865,7 +10879,14 @@ a.text-dark:hover {
 }
 
 .divider-custom .divider-custom-icon {
-    color: #2c3e50 !important;
+    /* color: #2c3e50 !important; */
+    color: #fff !important;
+    font-size: 2rem
+}
+
+.divider-custom .divider-custom-icon2 {
+    /* color: #2c3e50 !important; */
+    color: black !important;
     font-size: 2rem
 }
 
@@ -11040,14 +11061,18 @@ a.text-dark:hover {
 .portfolio-modal .portfolio-modal-title {
     font-size: 2.25rem;
     line-height: 2rem
+    
 }
 
 @media (min-width:992px) {
     .portfolio-modal .portfolio-modal-title {
         font-size: 3rem;
-        line-height: 2.5rem
+        line-height: 2.5rem;
+
     }
 }
+
+
 
 .portfolio-modal .close {
     position: absolute;
@@ -11160,3 +11185,4 @@ form .row:first-child .floating-label-form-group {
 .btn-social {
     margin-bottom: .5rem
 }
+
